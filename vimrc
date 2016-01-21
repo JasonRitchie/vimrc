@@ -15,3 +15,6 @@ set smartcase
 
 set number
 set ruler
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
