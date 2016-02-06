@@ -15,10 +15,11 @@ set smartcase
 
 set number
 set ruler
+set autochdir
+colorscheme vividchalk
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-colorscheme vividchalk
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
@@ -27,4 +28,7 @@ if has("gui_running")
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
+  set lines=100 columns=150
 endif
+autocmd VimEnter * NERDTree
+let NERDTreeShowBookmarks=1
