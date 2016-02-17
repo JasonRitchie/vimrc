@@ -13,9 +13,11 @@ set wildmode=list:longest
 set ignorecase
 set smartcase
 
-set number
+set relativenumber
 set ruler
 set autochdir
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
 colorscheme vividchalk
 execute pathogen#infect()
 syntax on
