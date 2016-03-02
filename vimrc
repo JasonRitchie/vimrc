@@ -30,6 +30,8 @@ let NERDTreeShowBookmark=1
 
 "Load NERDTree on startup
 autocmd VimEnter * NERDTree
+
+"Quick shortcuts for editing vimrc
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
