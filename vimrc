@@ -41,7 +41,7 @@ if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h14
+    set guifont=InputMono\ ExLight:h12
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
@@ -54,6 +54,8 @@ endif
 
 "Configure NERDTree
 let NERDTreeShowBookmark=1
+"
+let g:airline_powerline_fonts=1
 
 "Since q lets you exit NERDTree, let's do this to get back
 :nnoremap <leader>q :NERDTree<cr>
