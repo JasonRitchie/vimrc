@@ -51,9 +51,6 @@ if has("gui_running")
   :set guioptions-=L  "remove left-hand scroll bar
   set lines=1000 columns=150
 endif
-
-"Configure NERDTree
-let NERDTreeShowBookmark=1
 "
 let g:airline_powerline_fonts=1
 
