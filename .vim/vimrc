@@ -11,7 +11,7 @@ Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
       \ 'do':  'make fsautocomplete',
       \}
-
+Plug 'ervandew/supertab'
 call plug#end()
 
 " Syntastic
