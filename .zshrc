@@ -1,11 +1,24 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/jasoneq/.oh-my-zsh
+###
+# ZGen START
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+# check if there's no init script
+if ! zgen saved; then
+  # load oh my zsh
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/sudo
+  zgen oh-my-zsh plugins/command-not-found
+  zgen oh-my-zsh plugins/vi-mode
+  zgen load zsh-users/zsh-syntax-highlighting
+  zgen oh-my-zsh themes/agnoster
+  zgen save
+fi
+
+# ZGen END
+###
+
 DEFAULT_USER=`whoami`
 
 # Uncomment the following line to use case-sensitive completion.
@@ -56,8 +69,6 @@ plugins=(git)
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
