@@ -1,5 +1,18 @@
+call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-sensible'
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'vim-airline/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'pprovost/vim-ps1'
+Plug 'scrooloose/syntastic'
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
+call plug#end()
 
 
 
