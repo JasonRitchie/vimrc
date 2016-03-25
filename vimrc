@@ -49,9 +49,10 @@ let g:airline_powerline_fonts=1
 
 "Since q lets you exit NERDTree, let's do this to get back
 :nnoremap <leader>q :NERDTree<cr>
+:nnoremap <leader>n :NERDTreeToggle<cr>
 
 "Load NERDTree on startup
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 
 "Quick shortcuts for editing vimrc
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
