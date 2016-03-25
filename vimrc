@@ -26,10 +26,6 @@ call SetupVAM()
 " ACTIVATING PLUGINS
 VAMActivate github:scrooloose/nerdtree github:vim-airline/vim-airline github:tpope/vim-sensible github:kien/ctrlp.vim github:pprovost/vim-ps1 github:altercation/vim-colors-solarized
 
-" personal prefs
-" set hidden
-" set showcmd
-" set autochdir
 
 "Colors
 set background=dark
