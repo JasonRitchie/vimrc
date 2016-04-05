@@ -63,6 +63,7 @@ autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 autocmd FileType sql setlocal shiftwidth=2 tabstop=2
+autocmd FileType ps1 setlocal shiftwidth=4 tabstop=4 expandtab
 
 "For efficient #+movement
 set relativenumber
