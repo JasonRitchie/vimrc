@@ -61,6 +61,10 @@ let g:airline_powerline_fonts=1
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
+"Convert to unix lineendings with a keystroke
+:nnoremap <leader>lu :set ff=unix<cr>
+:nnoremap <leader>lw :set ff=win<cr>
+
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
