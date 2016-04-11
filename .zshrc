@@ -97,4 +97,11 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Dotnet Version Manager DNVM
 [ -s "/Users/jason/.dnx/dnvm/dnvm.sh" ] && . "/Users/jason/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+# VI-mode
+bindkey -v
+
+# 10ms for key sequences
+KEYTIMEOUT=1
