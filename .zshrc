@@ -16,6 +16,8 @@ if ! zgen saved; then
   zgen save
 fi
 
+ZGEN_RESET_ON_CHANGE=(${HOME}/.zshrc ${HOME}/.zshrc.local)
+
 # ZGen END
 ###
 
